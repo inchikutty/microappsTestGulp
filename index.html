@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="microappsApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>microapps Test App</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+</head>
+<body ng-controller="mainController">
+  <div class="top-content">
+   <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text">
+            <h1>Microapps Front End Coding Test</h1>
+            <div class="description">
+              <p>Anu George Enchackal</p>
+            </div>
+          </div>
+      </div>
+    <div ng-view>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

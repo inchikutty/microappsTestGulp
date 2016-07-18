@@ -1,0 +1,59 @@
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+        <form novalidate role="form" action="" method="post" class="f1" name="myForm" >
+          <h4>Make A Donation</h4>
+          <p>{{ message }}</p>
+          <div class="f1-steps">
+            <div class="f1-progress">
+                <div class="f1-progress-line" data-now-value="50" data-number-of-steps="2" ng-style="progress"></div>
+            </div>
+            <div class="f1-step active">
+              <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+              <p>Donation Information</p>
+            </div>
+            <div class="f1-step" ng-class="{active : activeStep>0}">
+              <div class="f1-step-icon"><i class="fa fa-key"></i></div>
+              <p>Payment Information</p>
+            </div>
+
+          <div class="steps">
+            <span class="step1" name ="step1" ng-show="activeStep === 0">
+              <div class="form-group">
+                  <label class="sr-only" for="f1-username">Username</label>
+                  <input type="text" name="f1-username" placeholder="username..." class=" form-control" ng-model="username" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="f1-password">Password</label>
+                <input type="password" name="f1-password" placeholder="Password..." class="form-control"  ng-model="password" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="f1-amount">Amount</label>
+                <input type="number" name="f1-amount" class="form-control" min=1 max=100 placeholder="amount..." ng-model="amount" required>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="f1-currency">Currency</label>
+                <select class=" form-control"  ng-model="currency" required>
+                  <option>USD</option>
+                  <option>EUR</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="f1-pay-method">Payment Method</label>
+                <select name="f1-pay-method" class=" form-control" ng-model="paymethod" required>
+                  <option>Debit card</option>
+                  <option>Credit card</option>
+                </select>
+              </div>
+              <div class="f1-buttons">
+                  <button click-and-disable="functionThatReturnsPromise()" name="step1-button" type="button" class="f1-button-next btn btn-default btn-md" ng-disabled="myForm.$pristine|| myForm.$invalid" ng-click="setActive(1)">Next</button>
+               </div>
+            </span>
+
+            <span class="step2" ng-show="activeStep === 1">
+             </span>
+           </div>
+
+       </div>
+      </form>
+   </div>
+ </div>

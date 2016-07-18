@@ -1,0 +1,31 @@
+{
+  "name": "microapps-test",
+  "version": "1.0.0",
+  "description": "front end challenge from microapps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inchikutty",
+  "license": "ISC",
+  "devDependencies": {
+    "convert-source-map": "^1.2.0",
+    "dargs": "^5.0.1",
+    "each-async": "^1.1.1",
+    "express": "^4.14.0",
+    "glob": "^7.0.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.0",
+    "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1",
+    "object-assign": "^4.1.0",
+    "rimraf": "^2.5.3",
+    "slash": "^1.0.0",
+    "vinyl": "^1.1.1",
+    "win-spawn": "^2.0.0"
+  }
+}
